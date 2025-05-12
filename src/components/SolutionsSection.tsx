@@ -1,6 +1,6 @@
 
 import { 
-  Activity, Building, Flask, TestTube, Microscope, Database,
+  Activity, Building, Database, TestTube, Microscope, 
   Dna, Shield, Video, HeartPulse, Stethoscope
 } from "lucide-react";
 import SolutionCard from "./SolutionCard";
@@ -39,12 +39,12 @@ const SolutionsSection = () => {
     {
       title: "AI-driven Drug Discovery Platforms",
       description: "Accelerate molecule screening, target identification, and lead optimization using AI.",
-      icon: <Flask className="h-10 w-10" />
+      icon: <Stethoscope className="h-10 w-10" />
     },
     {
       title: "Continuous Manufacturing Systems (CM)",
       description: "End-to-end continuous production lines for faster, flexible pharmaceutical manufacturing.",
-      icon: <TestTube className="h-10 w-10" />
+      icon: <Database className="h-10 w-10" />
     },
     {
       title: "Blockchain for Supply Chain Integrity",
@@ -62,7 +62,7 @@ const SolutionsSection = () => {
     {
       title: "Smart Wearable Device Manufacturing Platforms",
       description: "Scalable platforms for developing next-gen health monitoring wearables.",
-      icon: <Database className="h-10 w-10" />
+      icon: <HeartPulse className="h-10 w-10" />
     },
     {
       title: "AR/VR-assisted Device Training & Prototyping",
@@ -104,7 +104,7 @@ const SolutionsSection = () => {
         <div className="mb-20">
           <div className="flex items-center justify-center mb-10">
             <div className="h-16 w-16 rounded-full bg-datashield-teal text-white flex items-center justify-center mr-4">
-              <Flask className="h-8 w-8" />
+              <Stethoscope className="h-8 w-8" />
             </div>
             <h3 className="text-2xl md:text-3xl font-semibold text-datashield-gray-dark">Pharma</h3>
           </div>
