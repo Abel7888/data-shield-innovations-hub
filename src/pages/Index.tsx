@@ -5,6 +5,10 @@ import Footer from "@/components/Footer";
 import { Shield } from "lucide-react";
 
 const Index = () => {
+  const handleContactTeam = () => {
+    window.open('mailto:abelassefa19@gmail.com', '_blank');
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* NavBar */}
@@ -37,7 +41,10 @@ const Index = () => {
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Partner with DataShield to access cutting-edge solutions that will revolutionize your healthcare operations.
             </p>
-            <button className="bg-white text-datashield-blue-dark hover:bg-gray-100 font-medium py-3 px-8 rounded-md shadow-lg">
+            <button 
+              onClick={handleContactTeam}
+              className="bg-white text-datashield-blue-dark hover:bg-gray-100 font-medium py-3 px-8 rounded-md shadow-lg"
+            >
               Contact Our Team
             </button>
           </div>

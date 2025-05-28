@@ -27,11 +27,13 @@ const RequestDemoModal = ({ open, onOpenChange, solution, category }: RequestDem
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate API call
+    // Redirect to Calendly
     setTimeout(() => {
+      window.open('https://calendly.com/abelassefa788/partnerships-investor-and-advisors-information', '_blank');
+      
       toast({
-        title: "Demo Request Submitted",
-        description: "Thank you! Our team will contact you shortly.",
+        title: "Redirecting to Schedule Demo",
+        description: "You will be redirected to our calendar to schedule your demo.",
       });
       
       setIsSubmitting(false);
@@ -105,7 +107,7 @@ const RequestDemoModal = ({ open, onOpenChange, solution, category }: RequestDem
               className="w-full bg-datashield-blue hover:bg-datashield-blue-dark"
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Submitting..." : "Submit Request"}
+              {isSubmitting ? "Redirecting to Calendar..." : "Schedule Demo"}
             </Button>
           </div>
         </form>
